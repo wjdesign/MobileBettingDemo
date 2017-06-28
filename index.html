@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0  Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--[if lt IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <title>MobileBettingDemo</title>
+    <!-- meta character set -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Home</title>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <meta name="keywords" content="n">
+    <meta name="author" content="">
+    <!--css-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/slick.css" rel="stylesheet"><!--滑動效果-->
+    <link href="./css/slick-theme.css" rel="stylesheet"><!--滑動效果-->
+    <link href="./css/jquery.fancybox.css" rel="stylesheet"><!--燈箱效果-->
+    <link href="./css/animate.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet"><!--Main.css-->
+
+    <script language="javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <!--<script language="javascript" src="/js/directive/me-lazyload.js"></script>&lt;!&ndash;延遲載入&ndash;&gt;-->
+    <script language="javascript" src="./js/bootstrap.min.js"></script>
+    <script language="javascript" src="./js/jquery.parallaxmouse.min.js"></script><!--AG捕魚特效-->
+    <script language="javascript" src="./js/smoothscroll.js"></script><!--smoothscroll特效-->
+    <script language="javascript" src="./js/wow.js"></script><!--滚动事件特效-->
+    <script language="javascript" src="./js/jquery.fancybox.js"></script><!--燈箱特效-->
+    <script language="javascript" src="./js/jquery.scrollTo.min.js"></script><!--scrollTo特效-->
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 250,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+    <script language="JavaScript" src="./js/slick.min.js"></script><!--滑動效果-->
+</head>
+
+<body>
+<!--手機版下注-->
+<div id="mobile_header">
+    <!--手机版menu-->
+    <div id="navigation_rwd">
+        <div class="nav-menu-button"><button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><i class="fa fa-bars"></i></button></div>
+        <div class="nav-menu-links collapse navbar-collapse" id="myNavbar">
+            <ul>
+                <li><a href="#" class="scroll-home">首页</a></li>
+                <li><a href="#" class="scroll-features">特点</a></li>
+                <li><a href="#" class="scroll-services">客服系统</a></li>
+                <li><a href="#" class="scroll-qrcodepay">便捷支付</a></li>
+                <li><a href="#" class="scroll-mobile_screenshot">预览</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--网页版menu-->
+    <div id="navigation" class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/mobile-logo.png" alt="Logo">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#" class="scroll-home">首页</a></li>
+                    <li><a href="#" class="scroll-features">特点</a></li>
+                    <li><a href="#" class="scroll-services">客服系统</a></li>
+                    <li><a href="#" class="scroll-qrcodepay">便捷支付</a></li>
+                    <li><a href="#" class="scroll-mobile_screenshot">预览</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        //header fade in Effect
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $('#main-nav').addClass("affix");
+            } else {
+                $('#main-nav').removeClass("affix");
+            }
+        });
+
+        $('.nav-menu-links ul li').click(function() {
+            $('button.navbar-toggle').click();
+        });
+
+
+        $(function () {
+            $(".scroll-home").click(function () {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+
+            $(".scroll-features").click(function () {
+                $.scrollTo('#features',500);
+            });
+
+            $(".scroll-services").click(function () {
+                $.scrollTo('#services',500);
+            });
+
+            $(".scroll-qrcodepay").click(function () {
+                $.scrollTo('#qrcodepay',500);
+            });
+
+            $(".scroll-mobile_screenshot").click(function () {
+                $.scrollTo('#mobile_screenshot',500);
+            });
+
+        });
+
+        smoothScroll.init();
+
+    </script>
+    <div class="header-content">
+        <div class="container">
+            <div class="row header-row">
+                <div class="col-sm-5 col-md-4 header-img wow animated fadeInDown">
+                    <div class="header-slider carousel-slider" dir="ltr">
+                        <div>
+                            <img src="./images/1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/3.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <script>
+                        //header slick Effect
+                        $(document).ready(function () {
+                            $('.carousel-slider').slick({
+                                arrows: false,
+                                infinite: true,
+                                slidesToShow: 1,
+                                dots: true,
+                                slidsToScroll: 1,
+                                autoplay: true,
+                                ltr: true,
+                                autoplaySpeed: 2000,
+                                pauseOnHover: false
+                            });
+                        })
+                    </script>
+                </div>
+                <div class="col-sm-7 col-md-8 col-lg-8">
+                    <div class="header-txt">
+                        <div class="wow animated fadeInDownBig top-title" style="background-image: url(./images/t.png)"></div>
+                        <div class="app-info">
+                            <h3>追求极致 只为更好体验！</h3>
+                            <h5>全面支持IOS/ANDROID/WINPHONE平台 </h5>
+                        </div>
+                        <div class="download-box clearfix row">
+                            <div class="download-box-l col-sm-6 col-md-6">
+                                <a href="#" class="download-button clearfix" target="_blank">
+                                    <div class="download-button-l"><i class="fa fa-apple"></i></div>
+                                    <div class="download-button-r">iPhone版<p>AppStore下载</p></div>
+                                </a>
+                                <div class="code">
+                                    <img src="./images/ioscode.png" alt="" width="80%">
+                                    <p>扫描下载iPhone版</p>
+                                </div>
+                            </div>
+                            <div class="download-box-r col-sm-6 col-md-6">
+                                <a href="#" class="download-button clearfix" target="_blank">
+                                    <div class="download-button-l"><i class="fa fa-android"></i></div>
+                                    <div class="download-button-r">Android版<p>GooglePlay下载</p></div>
+                                </a>
+                                <div class="code">
+                                    <img src="./images/ioscode.png" alt="" width="80%">
+                                    <p>扫描下载Android版</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-html">手机触屏版： http://demoapp.pangu.bet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bg" style="background-image: url(./images/top-bg.png);"></div>
+</div>
+<!--features-->
+<div id="features" class="section-wrap padding-top100">
+    <!--container START-->
+    <div class="container">
+        <div class="row">
+            <div class="post-heading-center">
+                <h2>清净安心，从体验开始</h2>
+                <p>优秀的用户体验会大大提高转化率，从而大大增加您的利润，用户体验对于所有的产品和服务来讲都是至关重要的。</p>
+            </div>
+        </div>
+        <div class="row padding-bottom20">
+            <div class="col-sm-3">
+                <div class="affa-feature-icon">
+                    <div id="screen2Image1" class="app-ico-bg">
+                        <i class="fa fa-paypal"></i>
+                    </div>
+                    <h5>支付提升</h5>
+                    <p>支持支付宝、微信、财付通支付安全充值、提现，极速到账</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="affa-feature-icon">
+                    <div id="screen2Image2" class="app-ico-bg">
+                        <i class="fa fa-soundcloud"></i>
+                    </div>
+                    <h5>全平台支持</h5>
+                    <p>无论是iPhone还是Android或者winPhone还是iPad都能完美兼容，追求极致</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="affa-feature-icon">
+                    <div id="screen2Image3" class="app-ico-bg">
+                        <i class="fa fa-commenting"></i>
+                    </div>
+                    <h5>客服系统</h5>
+                    <p>时时与客服进行交流，疑难杂症不再是问题</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="affa-feature-icon">
+                    <div id="screen2Image4" class="app-ico-bg">
+                        <i class="fa fa-gamepad"></i>
+                    </div>
+                    <h5>独特小游戏</h5>
+                    <p>抢红包、转盘等彩金送不停幸运大奖属于您</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--container END-->
+    <!--container-wrap START-->
+    <div class="container-wrap container-padding100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-txt">
+                    <div class="post-heading-left">
+                        <h2>全平台支持</h2>
+                    </div>
+                    <p>一套程序，一个后台，轻松维护苹果IOS/安卓android以及WINPHONE和PC全平台，针对不想安装APP的用户同样提供htm5版本支持	</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-pull-right">
+            <figure class="img-layers3 img-pull-left">
+                <div class="img-layer-lg"><img class="wow animated fadeInRight" src="./images/feature-1.png" alt="feature-1"></div>
+                <div class="img-layer-md"><img class="wow animated fadeInLeft" src="./images/feature-2.png" alt="feature-2"></div>
+                <div class="img-layer-sm"><img class="wow animated fadeInDown" src="./images/feature-3.png" alt="feature-3"></div>
+            </figure>
+        </div>
+    </div>
+    <!--container-wrap END-->
+</div>
+<!--server-->
+<div id="services">
+    <div class="services-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-5 col-sm-offset-2 col-md-offset-0 .margin-bottom20">
+                    <figure class="servfigure-img">
+                        <div class="img-layer-left wow fadeInLeftBig">
+                            <img src="./images/feature-4.png" alt="">
+                        </div>
+                        <div class="img-layer-right wow fadeInLeft ">
+                            <img src="./images/feature-5.png" alt="">
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-sm-10 col-md-7 col-lg-6 col-sm-offset-1 col-md-offset-0 col-lg-offset-1 services-txt text-center-md text-center-xs">
+                    <h2>客服系统</h2>
+                    <p class="margin-bottom30">行业首创 实时跟踪客户行为并可实时辅助客户操作</p>
+                    <div class="affa-feature-icon-left margin-bottom30"> <!-- 1 -->
+                        <i class="fa fa-smile-o"></i>
+                        <h4>更加友好 实时沟通</h4>
+                        <p>无论在浏览、操作的过程中遇到任何问题，随时都能找到客服并轻松辅助客户操作</p>
+                    </div>
+                    <div class="affa-feature-icon-left margin-bottom30"> <!-- 2 -->
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h4>支持截图</h4>
+                        <p>方便的截图功能，更直观的问题表达</p>
+                    </div>
+                    <div class="affa-feature-icon-left"> <!-- 3 -->
+                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                        <h4>历史记录</h4>
+                        <p>历史记录实时可查</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--qrcodepay-->
+<div id="qrcodepay">
+    <div class="qrcodepay-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-7 col-lg-6 qr-wrap text-center-xs">
+                    <h2>方便快捷的支付</h2>
+                    <p>支付流程简单、高效，无需复杂操作，整个过程和支付宝、财付通等主流支付方式异曲同工。</p>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-offset-1 qr-wrap">
+                    <figure class="qrfigure-img">
+                        <div class="img-layer-left wow fadeInLeft">
+                            <img src="./images/feature-6.png" alt="">
+                        </div>
+                        <div class="img-layer-right wow  fadeInRightBig">
+                            <img src="./images/feature-7.png" alt="">
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--screenshot-->
+<div id="mobile_screenshot" class="bg-color">
+    <div class="container">
+        <div class="heading-center">
+            <h2>App界面预览</h2>
+            <p>Awesome Screenshots</p>
+        </div>
+        <div class="center">
+            <div>
+                <div class="img-hover">
+                    <h4>主界面</h4>
+                    <a class="fancybox" data-fancybox="gallery" href="./images/slide/1.jpg">
+                        <figure>
+                            <img src="./images/slide/1.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="img-hover">
+                    <h4>活动展示</h4>
+                    <a class="fancybox" data-fancybox="gallery" href="./images/2.jpg">
+                        <figure>
+                            <img src="./images/slide/2.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="img-hover">
+                    <h4>额度转换</h4>
+                    <a class="fancybox" data-fancybox="gallery" href="./images/3.jpg">
+                        <figure>
+                            <img src="./images/slide/3.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="img-hover">
+                    <h4>登录</h4>
+                    <a class="fancybox" data-fancybox="gallery" href="./images/4.jpg">
+                        <figure>
+                            <img src="./images/slide/4.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="img-hover">
+                    <h4>用户红利</h4>
+                    <a class="fancybox" data-fancybox="gallery" href="./images/5.jpg">
+                        <figure>
+                            <img src="./images/slide/5.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="img-hover">
+                    <h4>用户充值</h4>
+                    <a class="fancybox" data-fancybox="gallery" href="./images/6.jpg">
+                        <figure>
+                            <img src="./images/slide/6.jpg" alt="">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.center').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        draggable: true,
+        centerMode: true,
+        centerPadding: 60,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 2,
+                    draggable: true,
+                    centerMode: false
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    draggable: true,
+                    centerMode: false,
+                    centerPadding: 60
+                }
+            }
+        ]
+    });
+
+    $(document).ready(function () {
+        $(".fancybox").fancybox({
+            'showNavArrows' : true
+        });
+    });
+</script>
+<!--footer-->
+<div id="mobile_footer">
+    <div class="footer_t">
+        <div class="container">
+            <div class="footer_wrap">
+                <p class="copyright">Copyright &copy; 2017 All rights reserved.</p>
+                <div class="socials">
+                    <a href="" title="facebook" style="margin-left: 2px"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="" title="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="" title="ball"><i class="fa fa-futbol-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
+<!--<div class="back_top back-to-top"><i class="fa fa-angle-up"></i></div>-->
+<!--首頁-返回至頂-->
+<script type="text/javascript">
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 10, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
+</script>
+</body>
+</html>
